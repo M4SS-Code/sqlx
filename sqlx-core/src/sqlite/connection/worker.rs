@@ -5,8 +5,13 @@ use std::sync::Arc;
 use std::thread;
 
 use either::Either;
+<<<<<<< HEAD
 use futures_channel::oneshot;
 use futures_intrusive::sync::{Mutex, MutexGuard};
+=======
+use sqlx_rt::{Mutex, MutexGuard};
+use tokio::sync::oneshot;
+>>>>>>> 150f0ad9 (Replace futures_channel with tokio::sync)
 
 use crate::describe::Describe;
 use crate::error::Error;
