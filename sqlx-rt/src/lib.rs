@@ -40,7 +40,7 @@ pub use tokio::{
     io::{AsyncRead, AsyncReadExt, AsyncWrite, AsyncWriteExt, ReadBuf},
     net::TcpStream,
     runtime::Handle,
-    sync::{Mutex, MutexGuard, Semaphore, SemaphorePermit},
+    sync::{Mutex, Mutex as AsyncMutex, MutexGuard, Semaphore, SemaphorePermit},
     task::{spawn, yield_now},
     time::{sleep, timeout},
 };
