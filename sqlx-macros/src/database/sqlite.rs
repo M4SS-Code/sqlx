@@ -12,6 +12,18 @@ impl_database_ext! {
         String,
         Vec<u8>,
 
+        #[cfg(feature = "time")]
+        sqlx::types::time::Date,
+
+        #[cfg(feature = "time")]
+        sqlx::types::time::Time,
+
+        #[cfg(feature = "time")]
+        sqlx::types::time::OffsetDateTime,
+
+        #[cfg(feature = "time")]
+        sqlx::types::time::PrimitiveDateTime,
+
         #[cfg(feature = "chrono")]
         sqlx::types::chrono::NaiveDateTime,
 
